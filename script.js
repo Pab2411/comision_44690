@@ -40,7 +40,7 @@ laca=prompt('Necesita cotizar Laca : ? \n si o no')
 if (laca === 'si'){
    let folletoConLaca = valorLacaCm + precio(n1,n2,tipo) ;
     alert('El valor del folleto con Laca es : $ '+ folletoConLaca)
-}else (alert('Gracias por usar el calculador'));
+}else (alert('Gracias por usar el calculador '));
 
 
 
