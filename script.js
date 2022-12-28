@@ -7,7 +7,7 @@ const valorFrentDorsoCm = 2.5;
 const valorLacaCm = 2.3;
 let tipo ='';
 let laca ='';
-let cotizar='';
+
 
 
     
@@ -30,7 +30,7 @@ function precio(n1=0,n2=0, tipo){
              return (n1 * n2)*valorFrentDorsoCm;
         
             default:
-                return (cotizar);
+                return ('Error de Carga');
         }
     }
     alert(' '+'Largo del folleto: ' +(n1) + '\n Ancho del folleto :  ' +(n2) + '\n El valor del folleto es : '+'$ ' + precio(n1,n2,tipo));
