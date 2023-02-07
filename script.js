@@ -2,7 +2,6 @@ const valorFrenteCm = 1.5;
 const valorFrentDorsoCm = 2.5;
 const valorLacaCm = 2.3;
 const valorLacaFrendorsoCm = 4;
-//let tipo ='';
 let laca = '';
 
 
@@ -47,7 +46,6 @@ const largoInput = document.querySelector('#largo-input');
 const anchoInput = document.querySelector('#ancho-input');
 const tipoInput = document.querySelector('#tipo-input');
 const lacaInput = document.querySelector('#laca-input');
-//const radioDefault = document.getElementsByClassName('radio-default')
 const totalFolletos = document.querySelector('#total-folletos')
 const devDatos = document.querySelector('#dev-datos');
 
@@ -175,7 +173,6 @@ mostrarStorage.addEventListener("click", () => {
     
     productosLs.forEach(resultado =>  {
 
-        console.log(" este es resultado",resultado)
 
 
         cotizacion.innerHTML += `<h5>nombre del prod: ${resultado.nombre}</h5>
@@ -185,22 +182,9 @@ mostrarStorage.addEventListener("click", () => {
         <p>Lleva laca : ${resultado.laca}</p>
         <h5> Valor del folleto: ${resultado.valor}</h5>
          `
-        console.log(resultado.sumTot)
+       
         totalStorage.innerHTML = `Total de los folletos : ${resultado.sumTot}`
     })
 
     
-/*
-    Object.values(productosLs).forEach( prod => {
-
-        cotizacion.innerHTML += `<h5>nombre del prod: ${prod.nombre}</h5>
-        <p> largo: ${prod.largo}</p>
-        <p> ancho : ${prod.ancho}</p>
-        <p>Impresión : ${prod.tipo}</p>
-        <p>Lleva laca : ${prod.laca}</p>
-        <h5> Valor del folleto: ${prod.valor}</h5>
-    <button type="button" class="btn btn-danger">Borrar</button>
-    `
-
-    });*/
 })
