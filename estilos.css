@@ -1,0 +1,101 @@
+
+.titulo{
+  font-size: 30px;
+  padding-left: 44px;
+  padding-top: 30px;
+}
+.section{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+}
+.form-medida{
+width: 150px;
+}
+.totFolletos{
+  font-size: 19px;
+}
+
+.st{
+  margin-left: 20px;
+}
+.st h5{
+  font-size: 16px;
+}
+.st p{
+    margin-left: 10px;
+    font-size: 11px;
+    padding-left: 10px;
+    padding: 1px;
+    margin: 5px;
+}
+
+
+.mostrarStorage{
+  display: flex;
+}
+.sumaTotal{
+  width: 50%;
+  height: 10px;
+}
+.ultimaCotizacion{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.btnUcoti{
+  color: white;
+  background-color: orange;
+  border-radius: 11px;
+}
+.contIngresoDatos{
+    margin-left: 20px;
+    margin: 5px;
+    padding-top: 10px;
+    border: 10px;
+}
+.submit-control{
+  width: 50%;
+}
+.formcontrol{
+  width: 80%;
+}
+
+.formContacto {
+    width: 600px;
+    height: 560px;
+    background: rgba(89, 75, 175, 0.3);
+    padding: 0px 30px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: 30px;
+  }
+  legend {
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+.form-select{
+  height: 35px;
+}
+  
+input, textarea {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+}
+input textarea, textarea textarea {
+  min-height: 100px;
+  max-height: 500px;
+}
+.atributoLaca{
+  display: flex;
+}  
+  
+ 
+
+
+ 

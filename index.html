@@ -4,18 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Cotizador de Folletos</h1>
-    <fieldset>
-        <legend>Carga de datos</legend>
-        <div>Largo: <input type="text" id ="num1"></div>
-        
-       <div> Ancho: <input type="text" id ="num2"></div> 
 
-        <input type="button" id="boton" value="Calcular">
-    </fieldset>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./estilos.css" />
+
+   <!---Estilos---->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   
+
+   <title>Document</title>
+</head>
+
+<body>
+    <H1 class="titulo"> Cotizador de Folletos</H1>
+
+    <section class = "section">     
+
+    <form id="form-datos" class ="formContacto"> 
+
+<!--Nombre folleto-->
+        <div class="row">
+            <div class="mb-3  contIngresoDatos">
+                <label for="nombre-input" class="form-label">Ingrese el nombre del folleto</label>
+                <input type="text" class="form-control" id="nombre-input" placeholder="Nombre del Folleto">
+            </div>
+        
+<!--Largo folleto-->
+        <div>
+            <label for="largo-input" class="contIngresoDatos">Ingrese el largo del folleto</label>
+            <div class="mb-3  form-medida">
+                <input type="number" class="form-control" id="largo-input" placeholder="Largo en CM">
+            </div>
+        </div>
+<!--Ancho folleto-->
+        <div>
+            <label for="ancho-input" class="contIngresoDatos">Ingrese el ancho del folleto</label>
+            <div class="mb-2  form-medida">
+                <input type="number" class="form-control" id="ancho-input" placeholder="Ancho en CM">
+              </div>
+            </div>
+
+<!--Tipo de impresión folleto-->   
+    
+        <div>
+            <label for="tipo-input" class="contIngresoDatos">Ingrese Tipo de impresión</label>
+            <div class="mb-2 col-4 contIngresoDatos">
+                <select class="form-select" id="tipo-input" aria-label="Ingrese Tipo de impresión del folleto">
+                    <option value="FR">Frente</option>
+                    <option value="FD">Frente y Dorso</option>
+                  </select>
+                </div>
+            </div>
+
+<!--Laca Si o No-->
+    
+        <div>
+            <label for="laca-input" class="form-tipo">Necesita Laca su Folleto?</label>
+            <div class="mb-2 col-3 contIngresoDatos">
+                <select class="form-select" id="laca-input" aria-label="Necesita Laca su Folleto" >
+                    <option value="NO">No</option>
+                    <option value="SI">SI</option>
+                  </select>
+                </div>
+            </div>
+
+        <div >
+            <div class="mb-2  contIngresoDatos">
+                <input type="submit" class="submit-control" id="enviar" placeholder="Enviar">           
+            </div>
+            <div class="ultimaCotizacion">
+                <button class="btnUcoti" id="mostrarStorage"> Ultima cotización</button>
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <div class=" sumaTotal" >
+       
+            <div id="total-folletos" class="totFolletos"></div>
+            <div id="dev-datos" class="devDatos"></div>
+        
+    </div>
+</section>
+
+    
+
+
+        <div id="total-st"></div>
+        <div id="cotizacion-st" class="st"></div>
+    
+
+    
+
+   
+
+
+    
+        
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./script.js"></script>
 </body>
+
 </html>
