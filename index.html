@@ -48,7 +48,7 @@
     
         <div>
             <label for="tipo-input" class="contIngresoDatos">Ingrese Tipo de impresión</label>
-            <div class="mb-2 col-4 contIngresoDatos">
+            <div class="mb-2 col-3 contIngresoDatos">
                 <select class="form-select" id="tipo-input" aria-label="Ingrese Tipo de impresión del folleto">
                     <option value="FR">Frente</option>
                     <option value="FD">Frente y Dorso</option>
@@ -68,16 +68,49 @@
                 </div>
             </div>
 
-        <div >
+        <div class="botones" >
             <div class="mb-2  contIngresoDatos">
                 <input type="submit" class="submit-control" id="enviar" placeholder="Enviar">           
             </div>
-            <div class="ultimaCotizacion">
+
+            <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="mostrarStorage">
+                    Ultima cotización
+                </button>
+            <!--<div class="ultimaCotizacion">
                 <button class="btnUcoti" id="mostrarStorage"> Ultima cotización</button>
-            </div>
+            </div>-->
         </div>
     </div>
     </form>
+
+
+    <!----- Ponemos Modal ------>
+  
+  <!-- Modal -->
+  <div id = "modal">
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modalCaja">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Ultima cotización</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div id="total-st" class="totalSt"></div>
+
+        <div class="modal-body textoModal" id = "texto-modal">
+         
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!--<button type="button" class="btn btn-primary">Understood</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     <div class=" sumaTotal" >
        
@@ -85,13 +118,14 @@
             <div id="dev-datos" class="devDatos"></div>
         
     </div>
-</section>
 
     
 
+</section>
 
-        <div id="total-st"></div>
-        <div id="cotizacion-st" class="st"></div>
+
+        <!--<div id="total-st"></div>
+        <div id="cotizacion-st" class="st"></div>-->
     
 
     
