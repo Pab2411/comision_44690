@@ -195,3 +195,22 @@ mostrarStorage.addEventListener("click", () => {
 
     
 })
+
+// Trabajo con API
+
+const url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales"
+
+const valor = document.getElementById("valor")
+
+
+
+fetch(url)
+    .then( (response)=> response.json())
+    .then( (data) => {
+        let valDolar = document.createElement("div")
+        valDolar.innerHTML= `<div class="textoDolar"> Venta $ ${data[0].casa.venta}    Compra $ ${data[0].casa.compra} </div>`
+        valor.appendChild(valDolar)
+    }
+    )
+    
+    

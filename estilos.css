@@ -11,169 +11,95 @@
 
 }
 
-  
-  /* --- Modal ----*/
-  .botones{
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-      flex-direction: row;
-  }
-  .totalSt{
-    background: #B9B9B9;
-    height: 60px;
-    text-align: left;
-    padding-left: 16px;
-    padding-top: 9px;
-  }
-  .textoToalModal{
-    font-size: 19px;
-    color: white;
-  }
-  .totalPrecioModal{
-    color: red;
-    font-size: 26px;
-    padding-left: 154px;
-  }
-  .cajaTextomodal{
-    width: 100%;
-    background: linear-gradient(#7C7A7D, #EEEEEE);
+/* --- Modal ----*/
+.botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+}
+.totalSt{
+  background: #B9B9B9;
+  height: 60px;
+  text-align: left;
+  padding-left: 16px;
+  padding-top: 9px;
+}
+.textoToalModal{
+  font-size: 19px;
+  color: white;
+}
+.totalPrecioModal{
+  color: red;
+  font-size: 26px;
+  padding-left: 154px;
+}
+.cajaTextomodal{
+  width: 100%;
+  background: linear-gradient(#7C7A7D, #EEEEEE);
+  border-radius: 10px;
+}
+.cajaTextomodal p{
+  width: 95%;
+  margin-top: 5px;
+  margin-left: 39px;
+  margin-bottom: 5px;
+}
+.cajaTextomodal h5{
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 21px;
+}
+
+/* ---- Respuesta calculo ----*/
+
+.totalFolletos{
+  width: auto;
+  margin-left: 15px;
+  border-radius: 6px;
+  /* height: 34px; */
+  font-size: 25px;
+  background: red;
+}
+.devDatos{
+  width: 400px;
+}
+
+.cajaTextrespuesta{
+    display: block;
+    background: aqua;
+    width: auto;
     border-radius: 10px;
-  }
-  .cajaTextomodal p{
-    width: 95%;
-    margin-top: 5px;
-    margin-left: 39px;
-    margin-bottom: 5px;
-  }
-  .cajaTextomodal h5{
-    padding-left: 20px;
-    padding-top: 10px;
-    font-size: 21px;
-  }
-  
-  /* ---- Respuesta calculo ----*/
-  
-  .totalFolletos{
-    font-size: 36px;
-    background: red;
-  }
-  .devDatos{
-  
-  }
-  
-  .cajaTextrespuesta{
-      display: block;
-      background: aqua;
-      width: auto;
-      border-radius: 10px;
-      height: auto;
-      font-size: 22px;
-  }
-  .cajaTextrespuesta p{
-    padding-left: 60px;
-    margin-bottom: 10px;
-    font-size: 19px;
-  }
-  .cajaTextrespuesta h5{
-    font-size: 26px;
-      padding-left: 18px;
-  }
-  
-  
-  
-  .form-medida{
-  width: 150px;
-  }
-  .totFolletos{
-    font-size: 28px;
-    color: white;
-    margin-bottom: 20px;
-    background: linear-gradient(#7C7A7D, #5E5E5E);
-  }
-  
-  
-  
-  
-  
-  .mostrarStorage{
-    display: flex;
-  }
-  .sumaTotal{
-    width: 50%;
-    height: 10px;
-  }
-  .ultimaCotizacion{
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .btnUcoti{
-    color: white;
-    background-color: orange;
-    border-radius: 11px;
-  }
-  .contIngresoDatos{
-      margin-left: 20px;
-      margin: 5px;
-      padding-top: 10px;
-      border: 10px;
-  }
-  .submit-control{
-    width: 120px;
-  }
-  .formcontrol{
-    width: 80%;
-  }
-  
-  .formContacto {
-      width: 600px;
-      height: 560px;
-      background: rgba(89, 75, 175, 0.3);
-      padding: 0px 30px;
-      box-sizing: border-box;
-      border-radius: 25px;
-      margin: 30px;
-    }
-    legend {
-      margin-bottom: 30px;
-      font-size: 25px;
-      font-weight: bold;
-    }
-  .form-select{
-    height:40px;
-  }
-    
-  input, textarea {
-    width: 100%;
-    margin-bottom: 16px;
-    padding: 8px;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-  }
-  input textarea, textarea textarea {
-    min-height: 100px;
-    max-height: 500px;
-  }
-  .atributoLaca{
-    display: flex;
-  }  
-    
-   
-  
-  
-   
+    height: auto;
+    font-size: 22px;
 }
-.st h5{
-  font-size: 16px;
+.cajaTextrespuesta p{
+    padding-left: 50px;
+    margin-bottom: 1px;
+    font-size: 14px;
 }
-.st p{
-    margin-left: 10px;
-    font-size: 11px;
-    padding-left: 10px;
-    padding: 1px;
-    margin: 5px;
+.cajaTextrespuesta h5{
+  font-size: 20px;
+    padding-left: 18px;
 }
+
+
+
+.form-medida{
+width: 150px;
+}
+.totFolletos{
+  width: 400px;
+  padding-left: 15px;
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+  background: linear-gradient(#7C7A7D, #5E5E5E);
+  margin-top: 20px;
+}
+
+
+
 
 
 .mostrarStorage{
@@ -199,7 +125,7 @@
     border: 10px;
 }
 .submit-control{
-  width: 50%;
+  width: 120px;
 }
 .formcontrol{
   width: 80%;
@@ -220,7 +146,7 @@
     font-weight: bold;
   }
 .form-select{
-  height: 35px;
+  height:40px;
 }
   
 input, textarea {
@@ -239,7 +165,25 @@ input textarea, textarea textarea {
   display: flex;
 }  
   
- 
+/*---- Valor Dolar -----*/
+
+.valor{
+    width: 200px;
+    color: white;
+    background: linear-gradient(90deg, rgba(46,113,27,1) 0%, rgba(28,195,18,1) 51%, rgba(52,255,0,1) 100%);
+    border-radius: 5px;
+    font-size: 30px;
+    padding-left: 15px;
+}
+.texDolar{
+ /* width: 285px;
+  border: solid;
+  border-radius: 5px;*/
+}
+.textoDolar{
+  font-size: 19px;
+  padding-left: 4px;
+}
 
 
  
